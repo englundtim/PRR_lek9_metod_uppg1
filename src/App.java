@@ -23,6 +23,12 @@ public class App {
         int height = in.nextInt();
         rectangle(height, width);
 
+        System.out.println("");
+        System.out.println("uppg f)");
+        System.out.println("Skriv in ett negativt eller positivt tal:");
+        double tal = in.nextDouble();
+        System.out.println("Är det ett positivt tal: "+tal_positivt(tal));
+
     }
 
         static double omkretsCirkel(double radie)
@@ -50,6 +56,16 @@ public class App {
                     System.out.print("*");
                 }
                 
+            }
+        }
+        static boolean tal_positivt(double tal)
+        {
+            if (tal>0) 
+            {
+                return true;
+            }
+            else{
+                return false;
             }
         }
 }
