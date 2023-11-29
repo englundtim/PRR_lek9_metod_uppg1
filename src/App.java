@@ -8,6 +8,12 @@ public class App {
         double radie = in.nextDouble();
         omkretsCirkel(radie);
         System.out.println("omkrets vara:"+omkretsCirkel(radie));
+        System.out.println("Hur lång ska din linje vara?");
+        int längd = in.nextInt();
+        ritaLinje(längd);
+        
+
+
     }
 
         static double omkretsCirkel(double radie)
@@ -15,4 +21,13 @@ public class App {
             return radie*2*3.14;
         }
 
+
+        static void ritaLinje(int längd)
+        {
+            
+            for(int i=0; i<längd; i++)
+            {
+                System.out.print("-");
+            }
+        }
 }
