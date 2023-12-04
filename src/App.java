@@ -27,7 +27,15 @@ public class App {
         System.out.println("uppg f)");
         System.out.println("Skriv in ett negativt eller positivt tal:");
         double tal = in.nextDouble();
+        in.nextLine();
         System.out.println("Är det ett positivt tal: "+tal_positivt(tal));
+
+        System.out.println("");
+        System.out.println("uppg g)");
+        System.out.println("Skriv någon sort karaktär så ska datorn va magisk och kolla om det är ett tecken eller inte.");
+        String text = in.nextLine();
+        char tecken = text.charAt(0);
+        System.out.println("Är det en char?: "+siffra(tecken));
 
     }
 
@@ -62,6 +70,16 @@ public class App {
         {
             if (tal>0) 
             {
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        static boolean siffra(char tecken)
+        {
+            boolean svar = Character.isDigit(tecken);
+            if (svar==true) {
                 return true;
             }
             else{
